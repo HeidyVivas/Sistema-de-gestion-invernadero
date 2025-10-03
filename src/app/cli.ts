@@ -19,7 +19,7 @@ async function main() {
       message: "Sistema de Invernadero - Seleccione una opción:",
       choices: [
         { name: "Crear cultivo", value: "crear" },
-        { name: "Listar cultivos", value: "listar" },
+        { name: "Lista cultivos", value: "listar" },
         { name: "Leer sensores", value: "sensores" },
         { name: "Generar reporte CSV", value: "csv" },
         { name: "Salir", value: "salir" }
