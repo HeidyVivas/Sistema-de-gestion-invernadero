@@ -1,0 +1,1 @@
+{"version":3,"file":"IRepository.js","sourceRoot":"","sources":["../../src/repositories/IRepository.ts"],"names":[],"mappings":"","sourcesContent":["export interface IRepository<T> {\r\n  create(item: T): void;\r\n  findAll(): T[];\r\n  findById(id: number | string): T | undefined;\r\n}"]}
