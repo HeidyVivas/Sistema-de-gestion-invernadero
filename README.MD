@@ -20,27 +20,79 @@ Este sistema permite gestionar de manera integral las operaciones de un invernad
 El proyecto está estructurado en **4 capas principales**:
 
 ```
-src/
-├── presentation/          # Capa de Presentación
-│   └── .ts
-├── services/              # Capa de Servicios (Lógica de Negocio)
-│   ├── InvernaderoService.ts
-│   └── ReporteService.ts
-├── repositories/          # Capa de Acceso a Datos
-│   ├── InvernaderoRepository.ts
-│   ├── PlantaRepository.ts
-│   ├── RiegoRepository.ts
-│   └── CosechaRepository.ts
-└── models/                # Capa de Dominio
-    ├── Planta.ts
-    ├── Riego.ts
-    ├── Cosecha.ts
-    ├── ControlPlaga.ts
-    └── enums/
-        ├── TipoPlanta.ts
-        ├── EstadoPlanta.ts
-        ├── CalidadCosecha.ts
-        └── TipoReporte.ts
+SISTEMA_DE_GESTION-INVERNADERO/
+│
+├── dist/
+│   ├── app/
+│   │   └── cli.js
+│   │   └── cli.js.map
+│   │
+│   ├── domain/
+│   │   ├── entities/
+│   │   │   ├── Cultivo.js
+│   │   │   ├── Planta.js
+│   │   │   ├── Trabajador.js
+│   │   │   ├── sensors/
+│   │   │   │   ├── Sensor.js
+│   │   │   │   └── Trabajador.js.map
+│   │   │
+│   │   ├── errors/
+│   │   │   ├── ValidationError.js
+│   │   │   └── ValidationError.js.map
+│   │   │
+│   │   ├── services/
+│   │   │   ├── CultivoService.js
+│   │   │   ├── SensorService.js
+│   │   │   ├── CultivoService.js.map
+│   │   │   └── SensorService.js.map
+│   │   │
+│   │   ├── utils/
+│   │   │   ├── csvReport.js
+│   │   │   └── validators.js
+│   │   │
+│   │   └── repositories/
+│   │       ├── InMemoryRepository.js
+│   │       ├── IRepository.js
+│   │       ├── InMemoryRepository.js.map
+│   │       └── IRepository.js.map
+│   │
+│
+├── src/
+│   ├── app/
+│   │   └── cli.ts
+│   │
+│   ├── domain/
+│   │   ├── entities/
+│   │   │   ├── Cultivos.ts
+│   │   │   ├── Planta.ts
+│   │   │   ├── Trabajador.ts
+│   │   │   └── sensors/
+│   │   │       ├── Sensor.ts
+│   │   │       ├── SensorHumedad.ts
+│   │   │       └── SensorTemperatura.ts
+│   │   │
+│   │   ├── errors/
+│   │   │   └── ValidationError.ts
+│   │   │
+│   │   ├── services/
+│   │   │   ├── CultivoService.ts
+│   │   │   └── SensorService.ts
+│   │   │
+│   │   ├── utils/
+│   │   │   └── validators.ts
+│   │   │
+│   │   └── repositories/
+│   │       ├── InMemoryRepository.ts
+│   │       └── IRepository.ts
+│   │
+│
+├── .gitignore
+├── package-lock.json
+├── package.json
+├── README.md
+├── reporte_cultivos.csv
+└── tsconfig.json
+
 ```
 ## 🚀 Instalación y Uso
 
